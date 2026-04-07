@@ -1,1 +1,12 @@
+# Solicitação dos dados ao usuário
+capital = float(input("Digite o capital inicial (C): "))
+taxa = float(input("Digite a taxa de juros (I) em porcentagem: "))
+tempo = float(input("Digite o tempo (T): "))
 
+# Cálculo dos juros utilizando a fórmula fornecida
+# J = (C * I * T) / 100
+juros = (capital * taxa * tempo) / 100
+
+# Exibição do resultado
+print("-" * 30)
+print(f"O valor dos juros calculados é: R$ {juros:.2f}")
